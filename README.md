@@ -1,1 +1,2 @@
-# My_Personal_Profile_Page
+# My Personal Project Page
+# This is my Project for Treehouses Techdegree Front End Web Developper, Unit 1
