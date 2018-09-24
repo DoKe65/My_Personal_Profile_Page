@@ -1,15 +1,15 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #dcd5bb;
 }
 /* Link Styles */
 
@@ -57,8 +57,9 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/viewFromHome.jpg') no-repeat top center ;
   background-size: cover;
+  background-position: bottom;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -66,15 +67,21 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
+  background-image: url('images/myDogName.jpg');
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all 1s ease-in;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
+  border-color: #9b9884;
+  margin-top: 0px;
+  border-radius: 25%;
+  padding-left: 422px;
+  padding-top: 402px;
 }
 .tag {
   background-color: #efefef;
@@ -83,10 +90,10 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
-  color: yellow;
+  color: #f0cc41;
 }
 .card {
   margin: 30px;
@@ -99,9 +106,8 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #f0cc41;
 }
-
 ul.skills {
   padding: 0;
   text-align: center;
@@ -110,14 +116,29 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #f0cc41;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #5f6012;
+}
+
+ul.hobbies {
+  list-style-image: url('images/flower.png');
+  margin-left: -20px;
+}
+
+.card-image {
+  /* max-width: 420px; */
+  height: auto;
+  width: 100%;
+}
+
+.card-image:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -154,9 +175,6 @@ a.social {
 a.twitter {
   background-image: url(images/twitter.svg);
 }
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
 a.github {
   background-image: url(images/github.svg);
 }
@@ -169,10 +187,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +222,3 @@ a.social:hover {
   }
 
 }
-
