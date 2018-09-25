@@ -75,6 +75,9 @@ header .profile-image {
   border: 3px solid white;
   transition: all 0.5s ease-in;
 }
+header .about {
+  background-image: url('images/myDogName2.jpg');
+}
 header .profile-image:hover {
   transform: scale(1.1) rotate(360deg);
   border: 5px solid #9b9884;
